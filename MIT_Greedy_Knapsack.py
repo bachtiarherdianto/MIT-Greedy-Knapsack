@@ -123,4 +123,4 @@ for numItems in (5, 10, 15, 20, 25, 30, 35, 40, 45, 50):
     print('Test with function maxVal')  # to compare between maxFal and FastMaxVal
     TestMaxVal(items, 750, maxVal, True)
     print('Test with function FastMaxVal') # using principle of Dynamic programming
-#     TestMaxVal(items, 750, FastMaxVal, True)
+    TestMaxVal(items, 750, FastMaxVal, True)
