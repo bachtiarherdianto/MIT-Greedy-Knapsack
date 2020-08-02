@@ -108,19 +108,19 @@
 # # GroupFoods = BuildMenu(names, values, calories)
 # # Greedy(GroupFoods, 600)
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-# import random
-#
-# def BuildLargeMenu(numItems, maxVal, maxCost):
-#     items = []
-#     for i in range(numItems):
-#         items.append(Food(str(i),
-#                           random.randint(1, maxVal),
-#                           random.randint(1, maxCost)))
-#     return items  # to return large list of food
-#
-# for numItems in (5, 10, 15, 20, 25, 30, 35, 40, 45, 50):
-#     items = BuildLargeMenu (numItems, 90, 250)
-#     print('Test with function maxVal')  # to compare between maxFal and FastMaxVal
-#     TestMaxVal(items, 750, maxVal, True)
-#     print('Test with function FastMaxVal') # using principle of Dynamic programming
+import random
+
+def BuildLargeMenu(numItems, maxVal, maxCost):
+    items = []
+    for i in range(numItems):
+        items.append(Food(str(i),
+                          random.randint(1, maxVal),
+                          random.randint(1, maxCost)))
+    return items  # to return large list of food
+
+for numItems in (5, 10, 15, 20, 25, 30, 35, 40, 45, 50):
+    items = BuildLargeMenu (numItems, 90, 250)
+    print('Test with function maxVal')  # to compare between maxFal and FastMaxVal
+    TestMaxVal(items, 750, maxVal, True)
+    print('Test with function FastMaxVal') # using principle of Dynamic programming
 #     TestMaxVal(items, 750, FastMaxVal, True)
